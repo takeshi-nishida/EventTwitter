@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.animation.*?>
+
+<BorderPane id="body" fx:id="borderPane" prefHeight="480" prefWidth="640"
+  xmlns:fx="http://javafx.com/fxml" fx:controller="eventtwitter.Main">
+
+  <top>
+    <HBox>
+      <children>
+        <Button id="button" text="Open Twitter stream" onAction="#handleButtonAction" fx:id="button" />
+        <TextField fx:id="trackField" minWidth="200" promptText="ハッシュタグ等を入力してください" />
+      </children>
+    </HBox>
+  </top>
+  <center>
+    <StackPane fx:id="centerStack">
+      <children>
+        <Pane fx:id="pane" />
+        <Label id="mainLabel" fx:id="label" maxWidth="320" wrapText="true" />
+      </children>
+    </StackPane>
+  </center>
+  <bottom>
+    <ListView id="list" prefHeight="240" fx:id="list" orientation="HORIZONTAL" />
+  </bottom>
+</BorderPane>
