@@ -1,0 +1,22 @@
+#body{
+  -fx-background-color: linear-gradient(to bottom, lightskyblue, white);
+  -fx-font-family: Meiryo UI;  
+}
+
+#mainLabel{
+  -fx-text-fill: darkgreen;
+  -fx-font-size: 12pt;  
+}
+
+#list{
+  -fx-background-color: transparent;
+  -fx-text-fill: black;
+}
+
+.list-cell:odd{
+  -fx-background-color: linear-gradient(to top, green, lawngreen);  
+}
+
+.list-cell:even{
+  -fx-background-color: linear-gradient(to top, forestgreen, lawngreen);
+}
